@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <title>Formulario</title>
+</head>
+<body>
+  <header> <!--Se agregó un encabezado (<header>) para agrupar los títulos principales de la página-->
+  <h1>Bienvenidos a mi fiesta</h1> 
+  <h2>Por favor, confirmar asistencia:</h2>
+</header>
+<main> <!--Se agregó un contenido principal (<main>) para agrupar el formulario y la lista de invitados-->
+  <form class="formulario">
+    <label for="name">Nombre:</label> <!--Se utilizaron etiquetas <label> para asociar las etiquetas con los campos de entrada-->
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="age">Edad:</label>
+    <input type="number" name="age" id="age">
+    <br>
+
+    <label for="nationality">Nacionalidad:</label> <!--Se utilizaron etiquetas <label> para asociar las etiquetas con los campos de entrada-->
+    <select name="nationality" id="nationality">
+      <option value="ar">Argentina</option>
+      <option value="mx">Mexicana</option>
+      <option value="per">Peruana</option>
+      <option value="vnzl">Venezolana</option>
+    </select>
+    <br>
+    <button type="submit">Enviar</button> <!--Se cambió el tipo de botón a "submit" para que el formulario se envíe al hacer clic en el botón, en lugar de utilizar el atributo "input type=submit".-->
+  </form>
+
+  <section>
+    <h2>Lista de invitados</h2>
+  </section>
+</main>
+
+<footer> <!--Se utilizaron etiquetas semánticas (<header>, <main>, <section> y <footer>) para mejorar la accesibilidad y la comprensión del código-->
+  <script src="/formulario.js"></script>
+</footer>
+</body>
+
+</html>
